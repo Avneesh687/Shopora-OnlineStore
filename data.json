@@ -1,0 +1,281 @@
+[
+  {
+    "name": "Wireless Bluetooth Headphones",
+    "description": "Comfortable wireless headphones with clear sound and long battery life.",
+    "price": 1499,
+    "category": "Electronics",
+    "stock": 25,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+      "filename": "wireless-headphones"
+    },
+    "ratings": 4.3,
+    "numReviews": 120
+  },
+
+  {
+    "name": "Smart Watch",
+    "description": "Feature-rich smartwatch with fitness tracking and smart notifications.",
+    "price": 2499,
+    "category": "Electronics",
+    "stock": 18,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "filename": "smart-watch"
+    },
+    "ratings": 4.2,
+    "numReviews": 95
+  },
+
+  {
+    "name": "Mechanical Gaming Keyboard",
+    "description": "RGB mechanical keyboard designed for gaming and everyday use.",
+    "price": 1999,
+    "category": "Electronics",
+    "stock": 30,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
+      "filename": "gaming-keyboard"
+    },
+    "ratings": 4.5,
+    "numReviews": 150
+  },
+
+  {
+    "name": "Wireless Gaming Mouse",
+    "description": "Ergonomic wireless mouse with adjustable DPI and fast response.",
+    "price": 999,
+    "category": "Electronics",
+    "stock": 40,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1527814050087-3793815479db",
+      "filename": "gaming-mouse"
+    },
+    "ratings": 4.4,
+    "numReviews": 87
+  },
+
+  {
+    "name": "USB-C Fast Charger",
+    "description": "Compact fast charger compatible with smartphones and USB-C devices.",
+    "price": 799,
+    "category": "Electronics",
+    "stock": 50,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1591290619762-c588d3d1e6a3",
+      "filename": "usb-c-charger"
+    },
+    "ratings": 4.1,
+    "numReviews": 64
+  },
+
+  {
+    "name": "Men's Casual T-Shirt",
+    "description": "Comfortable cotton casual t-shirt suitable for everyday wear.",
+    "price": 599,
+    "category": "Fashion",
+    "stock": 60,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab",
+      "filename": "mens-tshirt"
+    },
+    "ratings": 4.2,
+    "numReviews": 110
+  },
+
+  {
+    "name": "Men's Denim Jacket",
+    "description": "Classic denim jacket with a comfortable fit and durable fabric.",
+    "price": 1799,
+    "category": "Fashion",
+    "stock": 22,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1551028719-00167b16eac5",
+      "filename": "denim-jacket"
+    },
+    "ratings": 4.4,
+    "numReviews": 73
+  },
+
+  {
+    "name": "Casual Hoodie",
+    "description": "Soft and comfortable hoodie for casual everyday outfits.",
+    "price": 1299,
+    "category": "Fashion",
+    "stock": 35,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+      "filename": "casual-hoodie"
+    },
+    "ratings": 4.3,
+    "numReviews": 81
+  },
+
+  {
+    "name": "Classic Sneakers",
+    "description": "Lightweight sneakers designed for everyday comfort and casual wear.",
+    "price": 1899,
+    "category": "Footwear",
+    "stock": 28,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+      "filename": "classic-sneakers"
+    },
+    "ratings": 4.5,
+    "numReviews": 132
+  },
+
+  {
+    "name": "Leather Wallet",
+    "description": "Slim wallet with multiple card slots and a compact design.",
+    "price": 699,
+    "category": "Accessories",
+    "stock": 45,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1627123424574-724758594e93",
+      "filename": "leather-wallet"
+    },
+    "ratings": 4.2,
+    "numReviews": 58
+  },
+
+  {
+    "name": "Travel Backpack",
+    "description": "Spacious backpack with laptop compartment and multiple storage pockets.",
+    "price": 1599,
+    "category": "Bags",
+    "stock": 32,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+      "filename": "travel-backpack"
+    },
+    "ratings": 4.4,
+    "numReviews": 101
+  },
+
+  {
+    "name": "Classic Analog Watch",
+    "description": "Elegant analog watch suitable for casual and formal occasions.",
+    "price": 2199,
+    "category": "Accessories",
+    "stock": 15,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1524805444758-089113d48a6d",
+      "filename": "analog-watch"
+    },
+    "ratings": 4.3,
+    "numReviews": 69
+  },
+
+  {
+    "name": "Polarized Sunglasses",
+    "description": "Stylish polarized sunglasses suitable for outdoor activities.",
+    "price": 899,
+    "category": "Accessories",
+    "stock": 38,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1511499767150-a48a237f0083",
+      "filename": "polarized-sunglasses"
+    },
+    "ratings": 4.1,
+    "numReviews": 47
+  },
+
+  {
+    "name": "Coffee Maker",
+    "description": "Compact coffee maker for preparing fresh coffee at home.",
+    "price": 2299,
+    "category": "Home",
+    "stock": 16,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd",
+      "filename": "coffee-maker"
+    },
+    "ratings": 4.3,
+    "numReviews": 55
+  },
+
+  {
+    "name": "Stainless Steel Water Bottle",
+    "description": "Durable insulated water bottle designed for everyday use.",
+    "price": 699,
+    "category": "Home",
+    "stock": 70,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1602143407151-7111542de6e8",
+      "filename": "water-bottle"
+    },
+    "ratings": 4.5,
+    "numReviews": 145
+  },
+
+  {
+    "name": "LED Desk Lamp",
+    "description": "Adjustable LED desk lamp with multiple brightness levels.",
+    "price": 899,
+    "category": "Home",
+    "stock": 34,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c",
+      "filename": "led-desk-lamp"
+    },
+    "ratings": 4.2,
+    "numReviews": 61
+  },
+
+  {
+    "name": "Face Wash",
+    "description": "Gentle daily face wash suitable for removing dirt and excess oil.",
+    "price": 349,
+    "category": "Beauty",
+    "stock": 80,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1556228578-8c89e6adf883",
+      "filename": "face-wash"
+    },
+    "ratings": 4.1,
+    "numReviews": 92
+  },
+
+  {
+    "name": "Moisturizing Cream",
+    "description": "Lightweight moisturizing cream for everyday skincare.",
+    "price": 499,
+    "category": "Beauty",
+    "stock": 65,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd",
+      "filename": "moisturizing-cream"
+    },
+    "ratings": 4.3,
+    "numReviews": 76
+  },
+
+  {
+    "name": "Yoga Mat",
+    "description": "Non-slip exercise mat suitable for yoga and home workouts.",
+    "price": 799,
+    "category": "Sports",
+    "stock": 42,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1592432678016-e910b452f9a2",
+      "filename": "yoga-mat"
+    },
+    "ratings": 4.4,
+    "numReviews": 88
+  },
+
+  {
+    "name": "Resistance Bands Set",
+    "description": "Set of resistance bands for home workouts and strength training.",
+    "price": 599,
+    "category": "Sports",
+    "stock": 55,
+    "imageUrl": {
+      "url": "https://images.unsplash.com/photo-1598289431512-b97b0917affc",
+      "filename": "resistance-bands"
+    },
+    "ratings": 4.3,
+    "numReviews": 71
+  }
+]
