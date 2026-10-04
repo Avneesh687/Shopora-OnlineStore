@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../Redux/cartSlice.js";
-
+import { toast } from "react-toastify";
 const ProductDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -38,9 +38,9 @@ const ProductDetail = () => {
         }),
       );
       // Optional: Redirect to cart after adding or show a toast notification
-      alert("Product added to cart!");
+      toast.success("Product added to cart!");
     } else {
-      alert("Product is out of stock and cannot be added to the cart.");
+      toast.error("Product is out of stock and cannot be added to the cart.");
     }
   };
 

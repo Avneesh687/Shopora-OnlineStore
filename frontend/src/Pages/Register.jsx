@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContext.jsx";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const [username, setUsername] = useState("");
@@ -26,6 +27,7 @@ const Register = () => {
         alert("Registration Successful! Welcome to Shopora.");
         login(data);
         navigate("/");
+        toast.success("Registration Successful! Welcome to Shopora.");
       } else {
         setError(data.message || "Registration failed. Please try again.");
       }

@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContext.jsx";
-
+import { toast } from "react-toastify";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -10,6 +10,7 @@ const Login = () => {
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
   const API_URL = import.meta.env.VITE_BACKEND_URL;
+  
   const handleLogin = async (e) => {
     e.preventDefault();
     setError("");
@@ -24,6 +25,7 @@ const Login = () => {
       if (res.ok) {
         login(data);
         navigate("/");
+        toast.success("Login Successful! Welcome back to Shopora.");
       } else {
         setError(data.message || "Invalid credentials. Please try again.");
       }

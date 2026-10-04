@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/AuthContext.jsx";
 import { useSelector } from "react-redux";
-
+import { toast } from "react-toastify";
 const Navbar = () => {
   const { user, logout } = useContext(AuthContext);
   const cartItemCount = useSelector((state) => state.cart.cartItems.length);
@@ -21,6 +21,7 @@ const Navbar = () => {
   const handleLogout = () => {
     logout();
     navigate("/login");
+    toast.success("You have been logged out successfully.");
   };
 
   return (

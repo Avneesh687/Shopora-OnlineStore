@@ -19,10 +19,13 @@ import AdminOrders from "./Admin/AdminOrders";
 import AdminUsers from "./Admin/AdminUsers";
 import AdminProducts from "./Admin/AdminProducts";
 import EditProduct from "./Admin/EditProduct";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <Router>
       <Navbar />
+      <ToastContainer />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />

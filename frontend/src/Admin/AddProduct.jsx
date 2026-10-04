@@ -2,7 +2,7 @@ import React from "react";
 import { useContext } from "react";
 import { AuthContext } from "../Context/AuthContext.jsx";
 import { useNavigate } from "react-router-dom";
-
+import { toast } from "react-toastify";
 const AddProduct = () => {
   const { user } = useContext(AuthContext);
   const API_URL = import.meta.env.VITE_BACKEND_URL;
@@ -46,14 +46,14 @@ const AddProduct = () => {
       const result = await response.json();
 
       if (response.ok) {
-        alert("Product added successfully!");
+        toast.success("Product added successfully!");
         navigate("/shop");
       } else {
-        alert(result.message || "Failed to add product.");
+        toast.error(result.message || "Failed to add product.");
       }
     } catch (error) {
       console.error("Error adding product:", error);
-      alert("An error occurred while adding the product.");
+      toast.error("An error occurred while adding the product.");
     } finally {
       setLoading(false);
     }

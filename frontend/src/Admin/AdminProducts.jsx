@@ -24,7 +24,7 @@ const AdminProducts = () => {
           },
         });
         const data = await response.json();
-        console.log("Fetched products:", data);
+        // console.log("Fetched products:", data);
 
         setProducts(Array.isArray(data) ? data : data.products || []);
       } catch (error) {
