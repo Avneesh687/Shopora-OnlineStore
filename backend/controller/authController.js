@@ -16,7 +16,9 @@ const resgisterUser = async (req, res) => {
     const { username, email, password } = req.body;
 
     try {
-        const userExist = await User.findOne({ email });
+        const userExist = await User.findOne({
+            $or: [{ email }, { username }]
+        });
         if (userExist) {
             return res.status(400).json({ message: 'User already exists' })
         }

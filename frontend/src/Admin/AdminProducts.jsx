@@ -7,7 +7,7 @@ const AdminProducts = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-
+  const API_URL = import.meta.env.VITE_BACKEND_URL;
   useEffect(() => {
     if (!user || user.role !== "admin") {
       navigate("/");
@@ -16,7 +16,7 @@ const AdminProducts = () => {
 
     const fetchProducts = async () => {
       try {
-        const response = await fetch("/api/products", {
+        const response = await fetch(`${API_URL}/api/products`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
@@ -44,7 +44,7 @@ const AdminProducts = () => {
       return;
     }
     try {
-      const response = await fetch(`/api/products/${productId}`, {
+      const response = await fetch(`${API_URL}/api/products/${productId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

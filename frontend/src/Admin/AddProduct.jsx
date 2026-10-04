@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const AddProduct = () => {
   const { user } = useContext(AuthContext);
-
+  const API_URL = import.meta.env.VITE_BACKEND_URL;
   const [formData, setFormData] = React.useState({
     name: "",
     description: "",
@@ -35,7 +35,7 @@ const AddProduct = () => {
     }
 
     try {
-      const response = await fetch("/api/products", {
+      const response = await fetch(`${API_URL}/api/products`, {
         method: "POST",
         body: data,
         headers: {
@@ -47,7 +47,7 @@ const AddProduct = () => {
 
       if (response.ok) {
         alert("Product added successfully!");
-        navigate("/products");
+        navigate("/shop");
       } else {
         alert(result.message || "Failed to add product.");
       }

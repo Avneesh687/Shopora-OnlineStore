@@ -6,7 +6,7 @@ const EditProduct = () => {
   const { user } = useContext(AuthContext);
   const { id } = useParams();
   const navigate = useNavigate(); // Fixed typo from 'nevigate'
-
+  const API_URL = import.meta.env.VITE_BACKEND_URL;
   const [formData, setFormData] = useState({
     name: "",
     description: "",
@@ -26,7 +26,7 @@ const EditProduct = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(`/api/products/${id}`);
+        const response = await fetch(`${API_URL}/api/products/${id}`);
         const data = await response.json();
         setFormData({
           name: data.name,

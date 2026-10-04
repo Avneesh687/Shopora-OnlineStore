@@ -5,6 +5,7 @@ import { AuthContext } from "../Context/AuthContext.jsx";
 import { clearCart } from "../Redux/cartSlice.js";
 
 const CheackOut = () => {
+  const API_URL = import.meta.env.VITE_BACKEND_URL;
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -63,7 +64,7 @@ const CheackOut = () => {
         },
       };
 
-      const response = await fetch("/api/orders", {
+      const response = await fetch(`${API_URL}/api/orders`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

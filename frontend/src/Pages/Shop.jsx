@@ -5,11 +5,11 @@ const Shop = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
-
+  const API_URL = import.meta.env.VITE_BACKEND_URL;
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("/api/products");
+        const response = await fetch(`${API_URL}/api/products`);
         const data = await response.json();
         setProducts(data);
       } catch (error) {

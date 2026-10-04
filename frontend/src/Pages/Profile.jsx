@@ -7,7 +7,7 @@ const Profile = () => {
   const [orders, setOrders] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
-
+  const API_URL = import.meta.env.VITE_BACKEND_URL;
   useEffect(() => {
     if (!user) {
       navigate("/login");
@@ -16,7 +16,7 @@ const Profile = () => {
 
     const fetchMyOrders = async () => {
       try {
-        const res = await fetch("/api/orders/myorders", {
+        const res = await fetch(`${API_URL}/api/orders/myorders`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",

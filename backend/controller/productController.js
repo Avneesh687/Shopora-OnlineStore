@@ -28,8 +28,8 @@ const getProductById = async (req, res) => {
 const createProduct = async (req, res) => {
     try {
         const { name, description, price, category, stock } = req.body;
-        console.log(req.body);
-        console.log(req.file);
+        // console.log(req.body);
+        // console.log(req.file);
         const imageUrl = {
             url: req.file.path,
             filename: req.file.filename

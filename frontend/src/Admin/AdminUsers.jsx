@@ -5,11 +5,11 @@ const AdminUsers = () => {
   const { user } = useContext(AuthContext);
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  const API_URL = import.meta.env.VITE_BACKEND_URL;
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await fetch("/api/auth/users", {
+        const response = await fetch(`${API_URL}/api/auth/users`, {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },
